@@ -1,5 +1,4 @@
 <nav>
-  <h1>Hi.</h1>
   <a href="/">
     {% if site.data.theme.social.gravatar %}
     <img src="http://www.gravatar.com/avatar/{{ site.data.theme.social.gravatar }}?s=200" id="gravatar" alt="My photo"/>
@@ -7,9 +6,16 @@
     <img src="/logo.png" id="logo" alt="Blog logo"/>
     {% endif %}
   </a>
-  <h2>I'm <a href="/">{{ site.data.theme.name }}</a>.</h2>
+  <h2>I'm {{ site.data.theme.name }}.</h2>
   <div id="bio">
-    <p>I enjoy solving problems with data and computation.</p>
+  <h6><center>Data Scientist</center></h6>
+  <h6><center>Consultant</center></h6>
+  <h6><center>Developer</center></h6><br>
+  </div>
+  <h5><center><a href="/">Blog</a></h5>
+  <h5><center><a href="/projects.html">Projects</a></h5>
+  <div id="bio">
+	  <p>I enjoy solving problems with data and computation.</p>
   </div>
   <div id="social">
     {% include social.html %}
